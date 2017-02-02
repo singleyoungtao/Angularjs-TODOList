@@ -1,0 +1,18 @@
+{
+  "name": "todolist",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "singleyoungtao <singleyoungtao@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
