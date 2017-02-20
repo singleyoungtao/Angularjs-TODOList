@@ -1,0 +1,19 @@
+<div>
+    <h1>TodoList </h1>
+
+    <input-and-button></input-and-button>
+
+    <br>
+
+    <div ng-repeat="x in todoList">
+        <div class="todo">
+            <label><input type="checkbox" class="item-choose" ng-model="x.done" id="{{'item-' + $index}}">
+            <span ng-bind="x.todoText" for="{{'item-' + $index}}"></span></label>
+        </div>
+    </div>
+    <div class="item-remove">
+        <p>
+            <button ng-click="remove()" class=" btn btn-danger">Remove Marked</button>
+        </p>
+    </div>
+</div>
