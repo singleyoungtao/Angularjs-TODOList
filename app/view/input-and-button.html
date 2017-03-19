@@ -1,7 +1,8 @@
 <div>
-    <form name="form" ng-submit="todoAdd()" class="form-horizontal">
+    <form name="form" ng-submit="todoAdd()">
         <div class="item-input">
-            <input type="text" ng-model="todoInput" class="input-area" placeholder="Add New" inputAssert required/>
+            <input type="text" ng-model="todoInput" class="input-area" placeholder="Add New"
+                   pattern="(^[\S])(.{0,20})([\S])$" autofocus required/>
             <input type="submit" id="input-button" class="btn btn-primary" value="Add New"
                    ng-disabled="$invalid"/>
         </div>

@@ -1,5 +1,5 @@
-<div>
-    <h1>TodoList </h1>
+<div class="main-content">
+    <h1>ToDoList </h1>
 
     <input-and-button></input-and-button>
 
@@ -8,7 +8,7 @@
     <div ng-repeat="x in todoList">
         <div class="todo">
             <label><input type="checkbox" class="item-choose" ng-model="x.done" id="{{'item-' + $index}}">
-            <span ng-bind="x.todoText" for="{{'item-' + $index}}"></span></label>
+            <span ng-bind="x.todoText" for="{{'item-' + $index}}" ng-class="{'line-through': x.done}"></span></label>
         </div>
     </div>
     <div class="item-remove">

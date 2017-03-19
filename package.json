@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -a localhost -p 8000 -c-1 ./app",
-
+    "start": "http-server -p 8000 -c-1 ./app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "debug": "false",
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
 }
